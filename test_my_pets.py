@@ -30,12 +30,9 @@ def test_my_pets_explicit(driver):
     driver.find_element(By.ID, 'pass').send_keys('qwerty1234')
 
 
-
-
-
 def test_my_pets_implicit(driver):
     ### Проверка неявного ожидания###
-   ### Проверка неявного ожидания ###
+    ### Проверка неявного ожидания ###
     driver.find_element(By.ID, 'email').send_keys('dfsfsdf@gmail.com')
     driver.find_element(By.ID, 'pass').send_keys('qwerty1234')
     driver.implicitly_wait(10)
